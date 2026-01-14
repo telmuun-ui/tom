@@ -11,8 +11,8 @@ import React from "react";
 
 const Home = () => {
   return (
-    <div className="flex justify-center">
-      <div className="w-[1440px] flex flex-col items-center px-4 sm:px-6 md:px-8">
+    <div className="w-full">
+      <div className="mx-auto w-full  px-4 sm:px-6 md:px-8">
         <Header />
         <Lineone />
         <LineTwo />

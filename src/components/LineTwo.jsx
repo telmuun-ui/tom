@@ -2,17 +2,18 @@ import React from "react";
 
 export const LineTwo = () => {
   return (
-    <section className="bg-gray-50 w-full py-24">
-      <div className="flex justify-center mb-20">
+    <section className="bg-gray-50 w-full py-12 sm:py-16 lg:py-24">
+      <div className="flex justify-center mb-10 sm:mb-14 lg:mb-20">
         <div className="bg-gray-200 py-2 px-6 rounded-2xl text-gray-600">
           About me
         </div>
       </div>
 
-      <div className="max-w-[1440px] justify-center flex gap-24 items-start">
-        <div className="relative w-[400px] h-[400px] flex-shrink-0">
-          <div className="absolute top-6 left-6 w-full h-full bg-gray-300"></div>
-          <div className="absolute top-3 left-3 w-full h-full bg-white"></div>
+      <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-24 flex flex-col lg:flex-row justify-center gap-10 lg:gap-24 items-center lg:items-start">
+        {/* Image */}
+        <div className="relative w-64 h-64 sm:w-80 sm:h-80 lg:w-[400px] lg:h-[400px] flex-shrink-0">
+          <div className="absolute top-5 left-5 w-full h-full bg-gray-300"></div>
+          <div className="absolute top-2.5 left-2.5 w-full h-full bg-white"></div>
           <img
             src="/me.jpg"
             alt="me"
@@ -20,7 +21,8 @@ export const LineTwo = () => {
           />
         </div>
 
-        <div className="max-w-[600px] flex flex-col gap-5 text-gray-700">
+        {/* Text */}
+        <div className="w-full max-w-[600px] flex flex-col gap-5 text-gray-700">
           <h3 className="font-semibold">Curious about me? Here you have it:</h3>
 
           <p>
@@ -45,14 +47,11 @@ export const LineTwo = () => {
 
           <p>Finally, some quick bits about me:</p>
 
-          <ul className="list-disc pl-5 flex gap-12">
-            <div>
-              <li>B.E. in Computer Engineering</li>
-              <li>Full time freelancer</li>
-            </div>
-            <div>
-              <li>Avid learner</li>
-            </div>
+          {/* ✅ mobile дээр 1 багана, sm+ дээр 2 багана */}
+          <ul className="list-disc pl-5 grid grid-cols-1 sm:grid-cols-2 gap-x-12 gap-y-2">
+            <li>B.E. in Computer Engineering</li>
+            <li>Full time freelancer</li>
+            <li>Avid learner</li>
           </ul>
 
           <p>

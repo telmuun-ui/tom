@@ -2,7 +2,7 @@ import React from "react";
 
 export const Footer = () => {
   return (
-    <footer className="w-full flex flex-col gap-20 justify-center bg-white">
+    <footer className="w-full flex flex-col gap-20 items-center justify-center bg-white">
       <div className="max-w-[1440px] w-full flex flex-col items-center text-center px-6">
         <span className="mb-6 text-sm bg-gray-100 px-4 py-1 rounded-full text-gray-600">
           Get in touch
